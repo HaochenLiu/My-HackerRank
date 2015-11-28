@@ -16,6 +16,7 @@ int main() {
         cin>>t;
         st.push(t);
     }
+
     while(!st.empty()) {
         cout<<st.top()<<" ";
         st.pop();

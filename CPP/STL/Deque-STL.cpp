@@ -8,7 +8,13 @@ void maxSlidingWindow(vector<int>& nums, int k) {
     deque<int> d;
     int n = nums.size();
     if(k < 1 || k > n) return;
-    if(k == 1) return;
+    if(k == 1) {
+        for(int i = 0; i < n; i++) {
+            cout<<nums[i]<<" ";
+        }
+        cout<<endl;
+        return;
+    }
 
     for(int i = 0; i < k; i++) {
         while(!d.empty() && d.back() < nums[i]) {

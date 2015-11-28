@@ -1,4 +1,4 @@
-class Rectangle{
+class Rectangle {
 protected:
     int width;
     int height;
@@ -16,6 +16,6 @@ public:
 class RectangleArea: public Rectangle {
 public:
     void Display() {
-        printf("%d\n",width * height);
+        printf("%d\n", width * height);
     }
 };
